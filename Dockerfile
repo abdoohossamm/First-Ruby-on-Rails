@@ -1,4 +1,4 @@
-FROM ruby:3.0.6-buster
+FROM ruby:3.0.2-buster
 WORKDIR /app
 COPY . /app
 RUN apt install curl
