@@ -1,24 +1,15 @@
-# README
+# First Ruby on Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is my first Ruby on Rails application.
 
-Things you may want to cover:
+Ruby 3.0.2
 
-* Ruby version
+Rails 7.0.3
 
-* System dependencies
+### Run on Docker
 
-* Configuration
+`docker compose up ruby_app`
 
-* Database creation
+`docker exec -it ruby_app bash`
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+`rails tailwindcss:install`
