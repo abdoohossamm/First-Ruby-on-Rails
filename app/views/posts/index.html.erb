@@ -1,0 +1,14 @@
+<div class="container mx-auto">
+  <h1 class="text-4xl font-bold mb-8">Posts</h1>
+  <a class="py-4 text-2xl text-blue-500" href="<%=post_path("new") %>">Create Post</a>
+  <%= turbo_frame_tag "posts" do %>
+    <div class="grid gap-4 ">
+      <% @posts.each do |post| %>
+        <%= turbo_stream_from "post_#{post.id}" %>
+        <a href="<%= post_path(post) %>" class="block bg-gray-200 rounded p-4 text-gray-800 font-medium hover:bg-gray-300">
+          <%= post.title %>
+        </a>
+      <% end %>
+    </div>
+  <% end %>
+</div>

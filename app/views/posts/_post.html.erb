@@ -1,0 +1,6 @@
+<%= turbo_stream_from "posts" %>
+
+<div id="post_<%= post.id %>">
+  <h2><%= post.title %></h2>
+  <p><%= post.content %></p>
+</div>
